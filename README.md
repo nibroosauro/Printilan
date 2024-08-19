@@ -34,7 +34,7 @@ cd circular-economy-initiative
 🎉 Getting Started
 	1.	Explore the Codebase: Dive into the code to understand how it works.
 
-<!--
+<!---
 ✨ Contributors
 
 Thanks to these amazing contributors:

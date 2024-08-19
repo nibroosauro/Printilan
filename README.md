@@ -1,4 +1,12 @@
-🌍♻️ Circular Economy Initiative
+#Printilan App 🫸🏼🫷🏼
+
+Kelompok APAAAA
+Ketua Kelompok: 
+Anggota 1: Fidelya Fredelina
+Anggota 2: Nibroos Aurore M. H.
+Anggota 3: Barbara Neanake A.
+
+🌍♻️ Printilan App : Circular Economy Initiative 🌍♻️
 
 Welcome to the Circular Economy Initiative repository! This project aims to promote and implement principles of the circular economy, where waste is minimized, resources are reused, and sustainable practices are at the forefront. Let’s build a better future together! 🌱
 

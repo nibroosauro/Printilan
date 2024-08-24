@@ -48,7 +48,21 @@ Report Issues: If you encounter any bugs or have suggestions, open an issue on t
 The Printilan app addresses the issue of waste accumulation in dormitories by creating a platform that facilitates the sale and purchase of second-hand goods. This not only helps reduce the amount of waste generated but also provides an economically viable option for students. The app's design is influenced by popular e-commerce platforms like Shopee and Tokopedia but with a specific focus on sustainability and the student market.
 
 ### 🔗 Similar Solutions
-While Printilan is unique in its focus on the dormitory market, it shares similarities with broader e-commerce platforms like:
-#### Bukalapak
-#### Tokopedia
+While Printilan is unique in its focus on the dormitory market, it shares similarities with broader e-commerce platforms like Bukalapak or Tokopedia.
+
 These platforms inspire the core functionality but Printilan differentiates itself with its focus on waste reduction and sustainability within the student community.
+
+------
+
+## 🌟 Final Thought
+
+*"The greatest threat to our planet is the belief that someone else will save it."*  
+— Robert Swan
+
+At Printilan, we believe that every small step toward sustainability counts. By choosing to reuse and recycle, you're not just decluttering your space—you're making a positive impact on our planet. Let's create a future where sustainability is second nature, one item at a time. 🌍💚
+
+-----
+
+<div align="center">
+Crafted with 💚 by Fidelya, Nibroos, and Barbara | Powered by DTETI's Junpro | Built for a Sustainable Future 🌱
+</div>

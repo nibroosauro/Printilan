@@ -1,6 +1,6 @@
 # Printilan App 🛍️♻️
 
-**Group Name : [namanya apahh]**  
+**Group Name : [The Powerpuff Girls]**  
 
 **Team Member:**  
 **Leader :** Fidelya Fredelina (Backend Engineer)  

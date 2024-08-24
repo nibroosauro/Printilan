@@ -28,7 +28,7 @@ Follow the steps below to set up and run the Printilan App on your local machine
 
 ```bash
 # Clone the repository
-git clone https://github.com/nibroosauro/JunPro-A.git
+git clone [https://github.com/nibroosauro/JunPro-A.git](https://github.com/nibroosauro/Printilan.git)
 
 # Navigate to the project directory
 cd printilan-app

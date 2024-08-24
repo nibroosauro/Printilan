@@ -1,11 +1,11 @@
 # Printilan App 🛍️♻️
 
-**Kelompok [namanya apahh]**  
+**Group Name : [namanya apahh]**  
 
-**Anggota Kelompok:**  
-**Ketua :** Fidelya Fredelina (Backend Engineer)  
-**Anggota :** Nibroos Aurore M. H. (Software Architect)  
-**Anggota :** Barbara Neanake A. (Frontend Engineer)  
+**Team Member:**  
+**Leader :** Fidelya Fredelina (Backend Engineer)  
+**Member :** Nibroos Aurore M. H. (Software Architect)  
+**Member :** Barbara Neanake A. (Frontend Engineer)  
 
 ## 🌍 Printilan: Empowering Sustainable Living for College Students
 

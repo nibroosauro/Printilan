@@ -4,7 +4,7 @@
 
 **Team Member**  <br/>
 **Leader :** Fidelya Fredelina - 22/496507/TK/54405 <br/>
-**Member :**   <br/>
+**Member :** Nibroos Aurore Majiid Haryanto - 22/494882/TK/54329 <br/>
 **Member :** Barbara Neanake Ajiesti - 22/494495/TK/54328  
 
 ## 🌍 Printilan: Empowering Sustainable Living for College Students

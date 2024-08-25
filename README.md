@@ -3,7 +3,7 @@
 **Group Name : The Powerpuff Girls**  
 
 **Team Member**  <br/>
-**Leader :** <br/>
+**Leader :** Fidelya Fredelina - 22/496507/TK/54405 <br/>
 **Member :**   <br/>
 **Member :** Barbara Neanake Ajiesti - 22/494495/TK/54328  
 

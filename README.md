@@ -5,7 +5,7 @@
 *Team Member*
 *Leader :* Elin - 
 *Member :* Rore -
-*Member : Barbara Neanake Ajiesti (Frontend Engineer) - 22/494495/TK/54328*
+*Member : Barbara Neanake Ajiesti - 22/494495/TK/54328*
 
 ##Printilan: Empowering Sustainable Living for College Students
 

@@ -22,6 +22,10 @@ Printilan is a **Native Desktop Application** for Windows, specifically tailored
 - **Eco-Conscious Solution:** A platform that encourages the recycling and reuse of goods, contributing to a sustainable lifestyle.
 - **Affordable Prices:** Second-hand items are available at prices significantly lower than market rates, providing economic benefits to both sellers and buyers.
 
+### 📊 Class Diagram for Printilan
+This class diagram represents the architecture of Printilan, a native Windows application designed to facilitate the exchange of second-hand goods among college students in dormitories. 
+![Printilan Class Diagram](https://github.com/nibroosauro/Printilan/blob/main/ClassDig.png)
+
 ### 🛠️ Installation Guide
 
 Follow the steps below to set up and run the Printilan App on your local machine:

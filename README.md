@@ -24,7 +24,7 @@ Printilan is a **Native Desktop Application** for Windows, specifically tailored
 
 ### 📊 Class Diagram for Printilan
 This class diagram represents the architecture of Printilan, a native Windows application designed to facilitate the exchange of second-hand goods among college students in dormitories. 
-![Printilan Class Diagram](https://github.com/nibroosauro/Printilan/blob/main/ClassDig.png)
+![Printilan Class Diagram](https://github.com/nibroosauro/Printilan/blob/main/NewClassDig.png)
 
 ### 🛠️ Installation Guide
 

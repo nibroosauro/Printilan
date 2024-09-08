@@ -91,6 +91,12 @@ namespace ClassPrintilanApp
             Console.WriteLine(product + " telah ditambahkan ke toko.");
         }
 
+        public void EditProduct(string product)
+        {
+            // Logic untuk menambahkan produk ke toko
+            Console.WriteLine(product + " telah ditambahkan ke toko.");
+        }
+
         public void RemoveProduct(string product)
         {
             // Logic untuk menghapus produk dari toko

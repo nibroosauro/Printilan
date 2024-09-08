@@ -7,3 +7,12 @@ D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\obj\Debug\ClassPrint
 D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\obj\Debug\ClassPrintilanApp.csproj.CoreCompileInputs.cache
 D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\obj\Debug\ClassPrintilanApp.exe
 D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\obj\Debug\ClassPrintilanApp.pdb
+D:\Cool-Yeah\Lima Sekawan IPK Tiga Delapan\Junpro Asoy\Printilan\obj\Debug\ClassPrintilanApp.csproj.AssemblyReference.cache
+D:\Cool-Yeah\Lima Sekawan IPK Tiga Delapan\Junpro Asoy\Printilan\obj\Debug\ClassPrintilanApp.Properties.Resources.resources
+D:\Cool-Yeah\Lima Sekawan IPK Tiga Delapan\Junpro Asoy\Printilan\obj\Debug\ClassPrintilanApp.csproj.GenerateResource.cache
+D:\Cool-Yeah\Lima Sekawan IPK Tiga Delapan\Junpro Asoy\Printilan\obj\Debug\ClassPrintilanApp.csproj.CoreCompileInputs.cache
+D:\Cool-Yeah\Lima Sekawan IPK Tiga Delapan\Junpro Asoy\Printilan\obj\Debug\ClassPrintilanApp.exe
+D:\Cool-Yeah\Lima Sekawan IPK Tiga Delapan\Junpro Asoy\Printilan\obj\Debug\ClassPrintilanApp.pdb
+D:\Cool-Yeah\Lima Sekawan IPK Tiga Delapan\Junpro Asoy\Printilan\bin\Debug\ClassPrintilanApp.exe.config
+D:\Cool-Yeah\Lima Sekawan IPK Tiga Delapan\Junpro Asoy\Printilan\bin\Debug\ClassPrintilanApp.exe
+D:\Cool-Yeah\Lima Sekawan IPK Tiga Delapan\Junpro Asoy\Printilan\bin\Debug\ClassPrintilanApp.pdb

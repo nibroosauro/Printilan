@@ -1,9 +1,30 @@
-D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\bin\Debug\ClassPrintilanApp.exe.config
-D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\bin\Debug\ClassPrintilanApp.exe
-D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\bin\Debug\ClassPrintilanApp.pdb
-D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\obj\Debug\ClassPrintilanApp.csproj.AssemblyReference.cache
-D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\obj\Debug\ClassPrintilanApp.Properties.Resources.resources
-D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\obj\Debug\ClassPrintilanApp.csproj.GenerateResource.cache
-D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\obj\Debug\ClassPrintilanApp.csproj.CoreCompileInputs.cache
-D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\obj\Debug\ClassPrintilanApp.exe
-D:\UGM_Coolyeah\Semester5\JunproPrintilan\ClassPrintilanApp\obj\Debug\ClassPrintilanApp.pdb
+D:/UGM_Coolyeah/Semester5/JunproPrintilan/ClassPrintilanApp/bin/Debug/ClassPrintilanApp.exe.config
+D:/UGM_Coolyeah/Semester5/JunproPrintilan/ClassPrintilanApp/bin/Debug/ClassPrintilanApp.exe
+D:/UGM_Coolyeah/Semester5/JunproPrintilan/ClassPrintilanApp/bin/Debug/ClassPrintilanApp.pdb
+D:/UGM_Coolyeah/Semester5/JunproPrintilan/ClassPrintilanApp/obj/Debug/ClassPrintilanApp.csproj.AssemblyReference.cache
+D:/UGM_Coolyeah/Semester5/JunproPrintilan/ClassPrintilanApp/obj/Debug/ClassPrintilanApp.Properties.Resources.resources
+D:/UGM_Coolyeah/Semester5/JunproPrintilan/ClassPrintilanApp/obj/Debug/ClassPrintilanApp.csproj.GenerateResource.cache
+D:/UGM_Coolyeah/Semester5/JunproPrintilan/ClassPrintilanApp/obj/Debug/ClassPrintilanApp.csproj.CoreCompileInputs.cache
+D:/UGM_Coolyeah/Semester5/JunproPrintilan/ClassPrintilanApp/obj/Debug/ClassPrintilanApp.exe
+D:/UGM_Coolyeah/Semester5/JunproPrintilan/ClassPrintilanApp/obj/Debug/ClassPrintilanApp.pdb
+D:/Cool-Yeah/Lima Sekawan IPK Tiga Delapan/Junpro Asoy/Printilan/obj/Debug/ClassPrintilanApp.csproj.AssemblyReference.cache
+D:/Cool-Yeah/Lima Sekawan IPK Tiga Delapan/Junpro Asoy/Printilan/obj/Debug/ClassPrintilanApp.Properties.Resources.resources
+D:/Cool-Yeah/Lima Sekawan IPK Tiga Delapan/Junpro Asoy/Printilan/obj/Debug/ClassPrintilanApp.csproj.GenerateResource.cache
+D:/Cool-Yeah/Lima Sekawan IPK Tiga Delapan/Junpro Asoy/Printilan/obj/Debug/ClassPrintilanApp.csproj.CoreCompileInputs.cache
+D:/Cool-Yeah/Lima Sekawan IPK Tiga Delapan/Junpro Asoy/Printilan/obj/Debug/ClassPrintilanApp.exe
+D:/Cool-Yeah/Lima Sekawan IPK Tiga Delapan/Junpro Asoy/Printilan/obj/Debug/ClassPrintilanApp.pdb
+D:/Cool-Yeah/Lima Sekawan IPK Tiga Delapan/Junpro Asoy/Printilan/bin/Debug/ClassPrintilanApp.exe.config
+D:/Cool-Yeah/Lima Sekawan IPK Tiga Delapan/Junpro Asoy/Printilan/bin/Debug/ClassPrintilanApp.exe
+D:/Cool-Yeah/Lima Sekawan IPK Tiga Delapan/Junpro Asoy/Printilan/bin/Debug/ClassPrintilanApp.pdb
+/home/fred/Documents/School/Selalu Tersenyum/5/Junpro/Printilan/obj/Debug/ClassPrintilanApp.exe
+/home/fred/Documents/School/Selalu Tersenyum/5/Junpro/Printilan/obj/Debug/ClassPrintilanApp.pdb
+C:\Users\Perfect Machine\Documents\fred\Enjiner\5\Junpro\Printilan\bin\Debug\ClassPrintilanApp.exe.config
+C:\Users\Perfect Machine\Documents\fred\Enjiner\5\Junpro\Printilan\bin\Debug\ClassPrintilanApp.exe
+C:\Users\Perfect Machine\Documents\fred\Enjiner\5\Junpro\Printilan\bin\Debug\ClassPrintilanApp.pdb
+C:\Users\Perfect Machine\Documents\fred\Enjiner\5\Junpro\Printilan\obj\Debug\ClassPrintilanApp.csproj.AssemblyReference.cache
+C:\Users\Perfect Machine\Documents\fred\Enjiner\5\Junpro\Printilan\obj\Debug\ClassPrintilanApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Perfect Machine\Documents\fred\Enjiner\5\Junpro\Printilan\obj\Debug\ClassPrintilanApp.Properties.Resources.resources
+C:\Users\Perfect Machine\Documents\fred\Enjiner\5\Junpro\Printilan\obj\Debug\ClassPrintilanApp.csproj.GenerateResource.cache
+C:\Users\Perfect Machine\Documents\fred\Enjiner\5\Junpro\Printilan\obj\Debug\ClassPrintilanApp.csproj.CoreCompileInputs.cache
+C:\Users\Perfect Machine\Documents\fred\Enjiner\5\Junpro\Printilan\obj\Debug\ClassPrintilanApp.exe
+C:\Users\Perfect Machine\Documents\fred\Enjiner\5\Junpro\Printilan\obj\Debug\ClassPrintilanApp.pdb

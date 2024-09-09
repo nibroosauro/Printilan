@@ -1,6 +1,7 @@
 # Printilan App 🛍️♻️
 
-**Group Name : The Powerpuff Girls**  
+ **The Powerpuff Girls 🚀**  
+<img src="https://github.com/nibroosauro/Printilan/blob/main/PowerPuff2.jpg?raw=true" alt="PowerPuff2" width="250"/>
 
 **Team Member**  <br/>
 **Leader :** Fidelya Fredelina - 22/496507/TK/54405 <br/>

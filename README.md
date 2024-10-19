@@ -1,7 +1,7 @@
 # Printilan App 🛍️♻️
 
  **The Powerpuff Girls 🚀**  
-<img src="https://github.com/nibroosauro/Printilan/blob/main/PowerPuff2.jpg?raw=true" alt="PowerPuff2" width="250"/>
+<img src="https://github.com/nibroosauro/Printilan/blob/main/Images/PowerPuff2.jpg" alt="PowerPuff2" width="250"/>
 
 **Team Member**  <br/>
 **Leader :** Fidelya Fredelina - 22/496507/TK/54405 <br/>
@@ -25,7 +25,7 @@ Printilan is a **Native Desktop Application** for Windows, specifically tailored
 
 ### 📊 Class Diagram for Printilan
 This class diagram represents the architecture of Printilan, a native Windows application designed to facilitate the exchange of second-hand goods among college students in dormitories. 
-![Printilan Class Diagram](https://github.com/nibroosauro/Printilan/blob/main/NewClassDig.png)
+![Printilan Class Diagram](https://github.com/nibroosauro/Printilan/blob/main/Images/NewClassDig.png)
 
 ### 🛠️ Installation Guide
 

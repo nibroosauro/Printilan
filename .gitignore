@@ -1,0 +1,10 @@
+# Ignore AppData folder
+AppData/
+
+# Ignore build output folders
+bin/
+obj/
+
+# Ignore log files
+*.log
+*.tmp

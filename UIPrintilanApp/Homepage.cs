@@ -28,7 +28,9 @@ namespace UIPrintilanApp
 
         private void btnChair_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Detail Informasi Produk @Elin", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+            Product ProductForm = new Product();
+            ProductForm.Show();
         }
 
         private void btnQuit_Click(object sender, EventArgs e)
@@ -53,7 +55,9 @@ namespace UIPrintilanApp
 
         private void btnDM_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ini nanti page DM yaa @Elin", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+            DM DMForm = new DM(); 
+            DMForm.Show();
         }
 
         private void btnWishlist_Click(object sender, EventArgs e)

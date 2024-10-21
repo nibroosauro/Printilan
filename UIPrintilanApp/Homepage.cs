@@ -50,8 +50,11 @@ namespace UIPrintilanApp
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ini nanti page profile @Rore", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+            Profile_Page profileForm = new Profile_Page();
+            profileForm.Show();
         }
+
 
         private void btnDM_Click(object sender, EventArgs e)
         {

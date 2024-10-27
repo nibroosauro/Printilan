@@ -47,5 +47,22 @@ namespace UIPrintilanApp
             SetUpStore SetUpProfileForm = new SetUpStore();
             SetUpProfileForm.Show();
         }
+
+        private void btnWishlist_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ini nanti page Wishlist", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnDM_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DM DMForm = new DM();
+            DMForm.Show();
+        }
+
+        private void Profile_Page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

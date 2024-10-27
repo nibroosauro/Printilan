@@ -32,12 +32,12 @@
             this.btnKursi = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panelHomepage = new System.Windows.Forms.Panel();
+            this.btnWishlist = new System.Windows.Forms.Button();
+            this.btnDM = new System.Windows.Forms.Button();
+            this.btnProfile = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
             this.btnChair = new System.Windows.Forms.Button();
             this.pbHomepage = new System.Windows.Forms.PictureBox();
-            this.btnProfile = new System.Windows.Forms.Button();
-            this.btnDM = new System.Windows.Forms.Button();
-            this.btnWishlist = new System.Windows.Forms.Button();
             this.panelHomepage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHomepage)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,54 @@
             this.panelHomepage.Name = "panelHomepage";
             this.panelHomepage.Size = new System.Drawing.Size(1440, 1024);
             this.panelHomepage.TabIndex = 0;
+            // 
+            // btnWishlist
+            // 
+            this.btnWishlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(255)))), ((int)(((byte)(225)))));
+            this.btnWishlist.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWishlist.BackgroundImage")));
+            this.btnWishlist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnWishlist.FlatAppearance.BorderSize = 0;
+            this.btnWishlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWishlist.ForeColor = System.Drawing.Color.Transparent;
+            this.btnWishlist.Location = new System.Drawing.Point(1070, 24);
+            this.btnWishlist.Margin = new System.Windows.Forms.Padding(0);
+            this.btnWishlist.Name = "btnWishlist";
+            this.btnWishlist.Size = new System.Drawing.Size(62, 64);
+            this.btnWishlist.TabIndex = 4;
+            this.btnWishlist.UseVisualStyleBackColor = false;
+            this.btnWishlist.Click += new System.EventHandler(this.btnWishlist_Click);
+            // 
+            // btnDM
+            // 
+            this.btnDM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(255)))), ((int)(((byte)(225)))));
+            this.btnDM.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDM.BackgroundImage")));
+            this.btnDM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDM.FlatAppearance.BorderSize = 0;
+            this.btnDM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDM.ForeColor = System.Drawing.Color.Transparent;
+            this.btnDM.Location = new System.Drawing.Point(1148, 31);
+            this.btnDM.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDM.Name = "btnDM";
+            this.btnDM.Size = new System.Drawing.Size(54, 44);
+            this.btnDM.TabIndex = 3;
+            this.btnDM.UseVisualStyleBackColor = false;
+            this.btnDM.Click += new System.EventHandler(this.btnDM_Click);
+            // 
+            // btnProfile
+            // 
+            this.btnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(255)))), ((int)(((byte)(225)))));
+            this.btnProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProfile.BackgroundImage")));
+            this.btnProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProfile.FlatAppearance.BorderSize = 0;
+            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfile.ForeColor = System.Drawing.Color.Transparent;
+            this.btnProfile.Location = new System.Drawing.Point(1224, 28);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(0);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(48, 47);
+            this.btnProfile.TabIndex = 2;
+            this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnQuit
             // 
@@ -113,54 +161,6 @@
             this.pbHomepage.TabIndex = 0;
             this.pbHomepage.TabStop = false;
             // 
-            // btnProfile
-            // 
-            this.btnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(255)))), ((int)(((byte)(225)))));
-            this.btnProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProfile.BackgroundImage")));
-            this.btnProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnProfile.FlatAppearance.BorderSize = 0;
-            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfile.ForeColor = System.Drawing.Color.Transparent;
-            this.btnProfile.Location = new System.Drawing.Point(1224, 28);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(0);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(48, 47);
-            this.btnProfile.TabIndex = 2;
-            this.btnProfile.UseVisualStyleBackColor = false;
-            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
-            // 
-            // btnDM
-            // 
-            this.btnDM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(255)))), ((int)(((byte)(225)))));
-            this.btnDM.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDM.BackgroundImage")));
-            this.btnDM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDM.FlatAppearance.BorderSize = 0;
-            this.btnDM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDM.ForeColor = System.Drawing.Color.Transparent;
-            this.btnDM.Location = new System.Drawing.Point(1148, 31);
-            this.btnDM.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDM.Name = "btnDM";
-            this.btnDM.Size = new System.Drawing.Size(54, 44);
-            this.btnDM.TabIndex = 3;
-            this.btnDM.UseVisualStyleBackColor = false;
-            this.btnDM.Click += new System.EventHandler(this.btnDM_Click);
-            // 
-            // btnWishlist
-            // 
-            this.btnWishlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(255)))), ((int)(((byte)(225)))));
-            this.btnWishlist.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWishlist.BackgroundImage")));
-            this.btnWishlist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnWishlist.FlatAppearance.BorderSize = 0;
-            this.btnWishlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWishlist.ForeColor = System.Drawing.Color.Transparent;
-            this.btnWishlist.Location = new System.Drawing.Point(1070, 24);
-            this.btnWishlist.Margin = new System.Windows.Forms.Padding(0);
-            this.btnWishlist.Name = "btnWishlist";
-            this.btnWishlist.Size = new System.Drawing.Size(62, 64);
-            this.btnWishlist.TabIndex = 4;
-            this.btnWishlist.UseVisualStyleBackColor = false;
-            this.btnWishlist.Click += new System.EventHandler(this.btnWishlist_Click);
-            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -171,9 +171,12 @@
             this.Controls.Add(this.panelHomepage);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1440, 1024);
+            this.MinimumSize = new System.Drawing.Size(1440, 1024);
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Homepage";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelHomepage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbHomepage)).EndInit();
             this.ResumeLayout(false);

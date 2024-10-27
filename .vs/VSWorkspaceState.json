@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Database",
+    "\\Etcetera",
+    "\\Images",
+    "\\Properties",
+    "\\UIPrintilanApp",
+    "\\UIPrintilanApp\\Properties"
   ],
+  "SelectedNode": "\\UIPrintilanApp\\SetUpStore.cs",
   "PreviewInSolutionExplorer": false
 }

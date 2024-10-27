@@ -55,23 +55,23 @@
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.ForeColor = System.Drawing.Color.GreenYellow;
-            this.btnLogin.Location = new System.Drawing.Point(281, 684);
+            this.btnLogin.Location = new System.Drawing.Point(258, 687);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(160, 65);
+            this.btnLogin.Size = new System.Drawing.Size(211, 85);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // tbUsername
             // 
-            this.tbUsername.Location = new System.Drawing.Point(281, 408);
+            this.tbUsername.Location = new System.Drawing.Point(287, 408);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(294, 26);
             this.tbUsername.TabIndex = 3;
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(281, 510);
+            this.tbPassword.Location = new System.Drawing.Point(287, 511);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(294, 26);
             this.tbPassword.TabIndex = 4;
@@ -87,9 +87,9 @@
             this.btnToSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToSignUp.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnToSignUp.Location = new System.Drawing.Point(184, 808);
+            this.btnToSignUp.Location = new System.Drawing.Point(156, 800);
             this.btnToSignUp.Name = "btnToSignUp";
-            this.btnToSignUp.Size = new System.Drawing.Size(349, 42);
+            this.btnToSignUp.Size = new System.Drawing.Size(402, 64);
             this.btnToSignUp.TabIndex = 5;
             this.btnToSignUp.UseVisualStyleBackColor = false;
             this.btnToSignUp.Click += new System.EventHandler(this.btnToSignUp_Click);
@@ -102,9 +102,9 @@
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.Transparent;
-            this.btnClose.Location = new System.Drawing.Point(1298, 36);
+            this.btnClose.Location = new System.Drawing.Point(1266, 31);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(80, 31);
+            this.btnClose.Size = new System.Drawing.Size(146, 36);
             this.btnClose.TabIndex = 6;
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
@@ -113,11 +113,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1440, 922);
+            this.ClientSize = new System.Drawing.Size(1440, 1024);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnToSignUp);
             this.Controls.Add(this.tbPassword);
@@ -127,10 +126,11 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1440, 1024);
-            this.MinimumSize = new System.Drawing.Size(1440, 838);
+            this.MinimumSize = new System.Drawing.Size(1440, 1024);
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "LogIn";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LogIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

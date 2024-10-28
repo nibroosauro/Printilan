@@ -8,3 +8,6 @@ obj/
 # Ignore log files
 *.log
 *.tmp
+
+# Environment Variable
+.env

@@ -98,12 +98,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppSettings.cs" />
     <Compile Include="DM.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DM.Designer.cs">
       <DependentUpon>DM.cs</DependentUpon>
     </Compile>
+    <Compile Include="EnvReader.cs" />
     <Compile Include="LandingPage.cs">
       <SubType>Form</SubType>
     </Compile>

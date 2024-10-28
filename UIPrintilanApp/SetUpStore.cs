@@ -185,8 +185,8 @@ namespace UIPrintilanApp
                     conn.Open();
                 }
 
-                sql = @"SELECT pr_update(:_productid, :_storeid, :_productname, :_price, :_category, 
-                                      :_material, :_dimensions, :_availability, :_description)";
+                sql = @"SELECT pr_update(:_productid, 1, :_productname, :_price, :_category, 
+                                  :_material, :_dimensions, :_availability, :_description)";
                 cmd = new NpgsqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("_productid", Convert.ToInt32(r.Cells["productid"].Value)); // Ambil dari DataGridView
@@ -310,17 +310,17 @@ namespace UIPrintilanApp
                     conn.Open();
                 }
 
-                sql = @"SELECT pr_insert(@_productname, @_price, @_category, 
-                                  @_material, @_dimensions, @_availability, @_description)";
+                sql = @"SELECT pr_insert(1, :_productname, :_price, :_category, 
+                                  :_material, :_dimensions, :_availability, :_description)";
                 cmd = new NpgsqlCommand(sql, conn);
 
-                cmd.Parameters.AddWithValue("@_productname", tbPrName.Text);
-                cmd.Parameters.AddWithValue("@_price", Convert.ToDecimal(tbPrPrice.Text));
-                cmd.Parameters.AddWithValue("@_category", tbPrCategory.Text);
-                cmd.Parameters.AddWithValue("@_material", tbPrMaterial.Text);
-                cmd.Parameters.AddWithValue("@_dimensions", tbPrDimensions.Text);
-                cmd.Parameters.AddWithValue("@_availability", cbPrAvailability.Checked);
-                cmd.Parameters.AddWithValue("@_description", tbPrDescription.Text);
+                cmd.Parameters.AddWithValue(":_productname", tbPrName.Text);
+                cmd.Parameters.AddWithValue(":_price", Convert.ToDecimal(tbPrPrice.Text));
+                cmd.Parameters.AddWithValue(":_category", tbPrCategory.Text);
+                cmd.Parameters.AddWithValue(":_material", tbPrMaterial.Text);
+                cmd.Parameters.AddWithValue(":_dimensions", tbPrDimensions.Text);
+                cmd.Parameters.AddWithValue(":_availability", cbPrAvailability.Checked);
+                cmd.Parameters.AddWithValue(":_description", tbPrDescription.Text);
 
                 if ((int)cmd.ExecuteScalar() == 1)
                 {

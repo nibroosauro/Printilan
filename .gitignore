@@ -1,13 +1,77 @@
-# Ignore AppData folder
-AppData/
+# Visual Studio related files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Ignore build output folders
+# Build results
 bin/
 obj/
-
-# Ignore log files
+Build/
+*.exe
+*.dll
+*.app
 *.log
+
+# NuGet packages
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Windows specific files
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# IDE specific files
+.idea/
+*.vcxproj*
+*.vcxproj.filters
+.vscode/
+
+# Resharper files
+_ReSharper*/
+*.DotSettings.user
+
+# Temporary files
 *.tmp
+*.bak
+*.swp
+*~$*
+
+# Logs
+*.log
+
+# Test result files
+TestResult.xml
+TestResults/
+
+# Coverage tools
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.vspx
+*.vsp
+
+# Database and local debug files
+*.mdf
+*.ldf
+*.pdb
+
+# Other ignored extensions
+*.class
+*.pyc
+*.o
+*.a
+*.d
+*.lib
+*.ilk
+*.exp
+
 
 # Environment Variable
 .env

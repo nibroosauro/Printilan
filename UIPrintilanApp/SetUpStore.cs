@@ -8,15 +8,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UIPrintilanApp;
+using Newtonsoft;
+using RestSharp;
 
 namespace UIPrintilanApp
 {
     public partial class SetUpStore : Form
     {
+        public static List<string> GetKotaList()
+        {
+            List<string> returnList = new List<string>();
+            var client = new RestClient("https://api.rajaongkir.com/starter/city");
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("key", "c31a7ac4eaed9d6d966f5af4cf2aa4b9");
+            IRestResponse response = client.Execute(request);
+            JsonObject obj = (JsonObject)SimpleJson.DeserializeObject(response.Content);
+            JsonObject rajaObj = (JsonObject)obj["rajaongkir"];
+            JsonArray cityListArray = (JsonArray)rajaObj["results"];
+            foreach (JsonObject city in cityListArray)
+            {
+                returnList.Add((string)city["city_name"]);
+            }
+            return returnList;
+        }
+
+        List<string> listKota = new List<string>();
         public SetUpStore()
         {
             InitializeComponent();
+            listKota = GetKotaList();
+            foreach (string kota in listKota)
+            {
+                tbLocation.AutoCompleteCustomSource.Add(kota);
+                tbLocation.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                tbLocation.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            }
         }
 
         private NpgsqlConnection conn;
@@ -103,7 +129,7 @@ namespace UIPrintilanApp
 
                 using (var rd = cmd.ExecuteReader())
                 {
-                    if (rd.FieldCount != 9)
+                    if (rd.FieldCount != 10)
                     {
                         MessageBox.Show("Jumlah kolom tidak sesuai dengan yang diharapkan!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
@@ -139,6 +165,7 @@ namespace UIPrintilanApp
                 tbPrDimensions.Text = r.Cells["dimensions"].Value.ToString();
                 cbPrAvailability.Checked = Convert.ToBoolean(r.Cells["availability"].Value);
                 tbPrDescription.Text = r.Cells["description"].Value.ToString();
+                tbLocation.Text = r.Cells["product_location"].Value.ToString();
 
                 MessageBox.Show("Baris dipilih: " + tbPrName.Text);
             }
@@ -160,6 +187,7 @@ namespace UIPrintilanApp
                     tbPrDimensions.Text = r.Cells["dimensions"].Value.ToString();
                     cbPrAvailability.Checked = Convert.ToBoolean(r.Cells["availability"].Value);
                     tbPrDescription.Text = r.Cells["description"].Value.ToString();
+                    tbLocation.Text = r.Cells["product_location"].Value.ToString();
                 }
             }
         }
@@ -187,7 +215,7 @@ namespace UIPrintilanApp
                 }
 
                 sql = @"SELECT pr_update(:_productid, 1, :_productname, :_price, :_category, 
-                                  :_material, :_dimensions, :_availability, :_description)";
+                                  :_material, :_dimensions, :_availability, :_description, :_product_location)";
                 cmd = new NpgsqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("_productid", Convert.ToInt32(r.Cells["productid"].Value)); // Ambil dari DataGridView
@@ -198,6 +226,7 @@ namespace UIPrintilanApp
                 cmd.Parameters.AddWithValue("_dimensions", tbPrDimensions.Text);
                 cmd.Parameters.AddWithValue("_availability", cbPrAvailability.Checked);
                 cmd.Parameters.AddWithValue("_description", tbPrDescription.Text);
+                cmd.Parameters.AddWithValue(":_product_location", tbLocation.Text);
 
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
@@ -209,6 +238,7 @@ namespace UIPrintilanApp
                     tbPrPrice.Text = tbPrCategory.Text = tbPrMaterial.Text = "";
                     tbPrDimensions.Text = tbPrDescription.Text = "";
                     cbPrAvailability.Checked = false;
+                    tbLocation.Text = "";
 
                     r = null;
                 }
@@ -312,7 +342,7 @@ namespace UIPrintilanApp
                 }
 
                 sql = @"SELECT pr_insert(1, :_productname, :_price, :_category, 
-                                  :_material, :_dimensions, :_availability, :_description)";
+                                  :_material, :_dimensions, :_availability, :_description, :_product_location)";
                 cmd = new NpgsqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue(":_productname", tbPrName.Text);
@@ -322,6 +352,7 @@ namespace UIPrintilanApp
                 cmd.Parameters.AddWithValue(":_dimensions", tbPrDimensions.Text);
                 cmd.Parameters.AddWithValue(":_availability", cbPrAvailability.Checked);
                 cmd.Parameters.AddWithValue(":_description", tbPrDescription.Text);
+                cmd.Parameters.AddWithValue(":_product_location", tbLocation.Text);
 
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
@@ -352,6 +383,5 @@ namespace UIPrintilanApp
                 }
             }
         }
-
     }
 }

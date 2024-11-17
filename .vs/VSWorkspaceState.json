@@ -2,12 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Database",
-    "\\Etcetera",
-    "\\Images",
-    "\\Properties",
-    "\\UIPrintilanApp",
-    "\\UIPrintilanApp\\Properties"
+    "\\UIPrintilanApp"
   ],
-  "SelectedNode": "\\UIPrintilanApp\\SetUpStore.cs",
+  "SelectedNode": "\\UIPrintilanApp\\UIPrintilanApp.sln",
   "PreviewInSolutionExplorer": false
 }

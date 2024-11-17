@@ -87,7 +87,6 @@ public class Employee
     public bool Login()
     {
 
-
         // Check if ConnectionString is initialized
         if (string.IsNullOrEmpty(AppSettings.ConnectionString))
         {
@@ -127,34 +126,5 @@ public class Employee
                 return false;
             }
         }
-
-
-        //// PAKE DUMMY YA KAK YA buat username n password
-        //var users = new Dictionary<string, string>
-        //{
-        //    { "Barbara", "BarbaraCantiq" },
-        //    { "Elin", "Elinrawr" },
-        //    { "Rore", "Rorenihboz" }
-        //};
-
-        //// Cek kombinasi username dan password ada di Dictionary
-        //if (users.TryGetValue(LoginName, out string correctPassword) && correctPassword == Password)
-        //{
-        //    if (LoginName == "Barbara")
-        //        EmployeeID = 4;
-        //    else if (LoginName == "Elin")
-        //        EmployeeID = 5;
-        //    else if (LoginName == "Rore")
-        //        EmployeeID = 6;
-        //    else
-        //        EmployeeID = 0; // Default ID
-
-        //    return true;
-        //}
-        //else
-        //{
-        //    return false;
-        //}
     }
 }
-

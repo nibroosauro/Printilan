@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +18,9 @@ namespace UIPrintilanApp
 
             try
             {
-                AppSettings.LoadEnvironment("D:/Cool-Yeah/Lima Sekawan IPK Tiga Delapan/Junior Project/Printilan/UIPrintilanApp/.env"); // Load .env file once on startup
+                string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                string envFilePath = Path.Combine(baseDirectory, ".env");
+                AppSettings.LoadEnvironment(envFilePath); // Load .env file once on startup
             }
             catch (Exception ex)
             {

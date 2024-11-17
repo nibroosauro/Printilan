@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UIPrintilanApp;
 
 namespace UIPrintilanApp
 {
@@ -20,7 +21,7 @@ namespace UIPrintilanApp
 
         private NpgsqlConnection conn;
         private DataGridViewRow r;
-        string connstring = "Host=172.177.227.63;Port=5432;Username=postgres;Password=dummyprodigy;Database=printilan;Include Error Detail=True;";
+        string connstring = AppSettings.ConnectionString;
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;

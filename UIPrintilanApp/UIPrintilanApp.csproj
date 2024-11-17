@@ -164,6 +164,7 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="UserSession.cs" />
     <EmbeddedResource Include="DM.resx">
       <DependentUpon>DM.cs</DependentUpon>
     </EmbeddedResource>

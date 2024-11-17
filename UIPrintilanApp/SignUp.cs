@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,27 +30,54 @@ namespace UIPrintilanApp
             string email = tbEmail.Text;
             string password = tbPassword.Text;
 
-            // Validasi kl ada field kosong
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Semua field harus diisi!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // objek User baru
-            User newUser = new User(username, email, password);
+            // Generate random UserID
+            Random rand = new Random();
+            int userId = rand.Next(1000, 9999);  // Generates a random 4-digit number for UserID
 
-            // Sign-up berhasil
-            MessageBox.Show("Sign-up berhasil! Selamat datang, " + newUser.Username, "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Full name = username as per your request
+            string fullName = username;
 
-            // Sembunyikan form login
-            this.Hide();
+            // Insert data into the tb_user table
+            try
+            {
+                using (var connection = new NpgsqlConnection(AppSettings.ConnectionString))
+                {
+                    connection.Open();
+                    string query = "INSERT INTO tb_user (userid, username, email, full_name, password) " +
+                                   "VALUES (@userId, @username, @email, @fullName, @password)";
 
-            // Tampilkan form homepage
-            Homepage homePage = new Homepage(); // Pastikan menggunakan nama yang benar
-            homePage.Show(); // Tampilkan Homepage
+                    using (var command = new NpgsqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@userId", userId);
+                        command.Parameters.AddWithValue("@username", username);
+                        command.Parameters.AddWithValue("@email", email);
+                        // command.Parameters.AddWithValue("@phoneNumber", phoneNumber ?? (object)DBNull.Value); // Handle null value
+                        command.Parameters.AddWithValue("@fullName", fullName);
+                        command.Parameters.AddWithValue("@password", password);
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+
+                MessageBox.Show("Sign-up berhasil! Silakan login dengan username dan password Anda.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Sembunyikan form sign-up
+                this.Hide();
+                // Tampilkan form login
+                LogIn loginForm = new LogIn(); // Create instance of LogIn form
+                loginForm.Show();
+            }
+            catch (Exception ex) // Added the 'ex' parameter for the exception handling
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
 
         private void tbEmail_TextChanged(object sender, EventArgs e)
         {
@@ -69,7 +97,7 @@ namespace UIPrintilanApp
         private void btnToLogIn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LogIn loginForm = new LogIn(); 
+            LogIn loginForm = new LogIn();
             loginForm.Show();
         }
 

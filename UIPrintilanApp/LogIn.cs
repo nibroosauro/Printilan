@@ -35,6 +35,12 @@ namespace UIPrintilanApp
                 // Jika login berhasil, tampilkan pesan
                 MessageBox.Show("Login Berhasil, ID anda adalah " + employee.EmployeeID.ToString(), "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+
+                // Store the user information in UserSession
+                UserSession.UserId = employee.EmployeeID;
+                //UserSession.Username = tbUsername.Text; // Optionally store username/email
+                //UserSession.Email = tbEmail.Text; // Optionally store email
+
                 // Sembunyikan form login
                 this.Hide();
 

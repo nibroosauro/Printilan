@@ -91,11 +91,50 @@ namespace UIPrintilanApp
             ListDMForm.Show();
         }
 
+        //private void SetUpStore_Load(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        conn = new NpgsqlConnection(connstring);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error initializing connection: " + ex.Message, "FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        if (conn != null && conn.State == ConnectionState.Open)
+        //        {
+        //            conn.Close();
+        //        }
+        //    }
+        //}
+
         private void SetUpStore_Load(object sender, EventArgs e)
         {
             try
             {
                 conn = new NpgsqlConnection(connstring);
+
+                if (conn.State != ConnectionState.Open)
+                {
+                    conn.Open();
+                }
+
+                // Fetch the storeid corresponding to the logged-in user
+                int userId = UserSession.UserId;
+                sql = "SELECT sellerid FROM seller WHERE userid = @userId";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@userid", userId);
+
+                var result = cmd.ExecuteScalar();
+                if (result != null)
+                {
+                    int storeId = Convert.ToInt32(result);
+                    // You can now use this storeId for filtering queries
+                }
+                else
+                {
+                    MessageBox.Show("Store not found for this user.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
             catch (Exception ex)
             {
@@ -121,7 +160,7 @@ namespace UIPrintilanApp
                     conn.Open();
                 }
 
-                dgvData.DataSource = null; 
+                dgvData.DataSource = null;
 
                 sql = "select * from pr_select()";
                 cmd = new NpgsqlCommand(sql, conn);
@@ -138,7 +177,7 @@ namespace UIPrintilanApp
                     dt.Load(rd);
                 }
 
-                dgvData.DataSource = dt; 
+                dgvData.DataSource = dt;
             }
             catch (Exception ex)
             {
@@ -152,6 +191,8 @@ namespace UIPrintilanApp
                 }
             }
         }
+
+
         private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0) 
@@ -262,6 +303,65 @@ namespace UIPrintilanApp
             }
         }
 
+        //yg buat rore masih ada error
+        //private void btnUpdate_Click(object sender, EventArgs e)
+        //{
+        //    if (r == null)
+        //    {
+        //        MessageBox.Show("Please select a row to update.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //        return;
+        //    }
+
+        //    try
+        //    {
+        //        if (conn == null)
+        //        {
+        //            conn = new NpgsqlConnection(connstring);
+        //        }
+
+        //        if (conn.State != ConnectionState.Open)
+        //        {
+        //            conn.Open();
+        //        }
+
+        //        sql = @"UPDATE product 
+        //        SET productname = @productname, price = @price, category = @category, 
+        //            material = @material, dimensions = @dimensions, availability = @availability, 
+        //            description = @description, product_location = @product_location
+        //        WHERE productid = @productid AND storeid = @storeid";  // Check storeid for authorization
+        //        cmd = new NpgsqlCommand(sql, conn);
+
+        //        cmd.Parameters.AddWithValue("@productid", Convert.ToInt32(r.Cells["productid"].Value)); // Get from DataGridView
+        //        cmd.Parameters.AddWithValue("@storeid", UserSession.StoreId);  // Ensure update is authorized for the store
+        //        cmd.Parameters.AddWithValue("@productname", tbPrName.Text);
+        //        cmd.Parameters.AddWithValue("@price", Convert.ToDecimal(tbPrPrice.Text));
+        //        cmd.Parameters.AddWithValue("@category", tbPrCategory.Text);
+        //        cmd.Parameters.AddWithValue("@material", tbPrMaterial.Text);
+        //        cmd.Parameters.AddWithValue("@dimensions", tbPrDimensions.Text);
+        //        cmd.Parameters.AddWithValue("@availability", cbPrAvailability.Checked);
+        //        cmd.Parameters.AddWithValue("@description", tbPrDescription.Text);
+        //        cmd.Parameters.AddWithValue("@product_location", tbLocation.Text);
+
+        //        int rowsAffected = cmd.ExecuteNonQuery();
+        //        if (rowsAffected > 0)
+        //        {
+        //            MessageBox.Show("Product updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //            btnLoadData.PerformClick();  // Reload data after update
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Failed to update product.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        }
+
+        //        conn.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error: " + ex.Message, "Update Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
+
+
         // Bagianku udah aman yaa -Bar
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -296,7 +396,7 @@ namespace UIPrintilanApp
                     {
                         MessageBox.Show("Data produk berhasil dihapus", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        conn.Close(); 
+                        conn.Close();
 
                         btnLoadData.PerformClick();
 
@@ -325,6 +425,54 @@ namespace UIPrintilanApp
                 }
             }
         }
+
+        //yang buat RORE masih error
+        //private void btnDelete_Click(object sender, EventArgs e)
+        //{
+        //    if (r == null)
+        //    {
+        //        MessageBox.Show("Please select a row to delete.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //        return;
+        //    }
+
+        //    try
+        //    {
+        //        if (conn == null)
+        //        {
+        //            conn = new NpgsqlConnection(connstring);
+        //        }
+
+        //        if (conn.State != ConnectionState.Open)
+        //        {
+        //            conn.Open();
+        //        }
+
+        //        sql = @"DELETE FROM product 
+        //        WHERE productid = @productid AND storeid = @storeid";  // Ensure it belongs to the authorized store
+        //        cmd = new NpgsqlCommand(sql, conn);
+
+        //        cmd.Parameters.AddWithValue("@productid", Convert.ToInt32(r.Cells["productid"].Value));  // Get from DataGridView
+        //        cmd.Parameters.AddWithValue("@storeid", UserSession.StoreId);  // Check storeid for authorization
+
+        //        int rowsAffected = cmd.ExecuteNonQuery();
+        //        if (rowsAffected > 0)
+        //        {
+        //            MessageBox.Show("Product deleted successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //            btnLoadData.PerformClick();  // Reload data after delete
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Failed to delete product.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        }
+
+        //        conn.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error: " + ex.Message, "Delete Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
+
 
         // LIN SORRY BGT INI BLM SELESAI DAN AKU UDAH GA KUAT -Bar
         private void btnInsert_Click(object sender, EventArgs e)
@@ -369,7 +517,7 @@ namespace UIPrintilanApp
                     MessageBox.Show("Data produk gagal ditambahkan.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                conn.Close(); 
+                conn.Close();
             }
             catch (Exception ex)
             {
@@ -383,5 +531,55 @@ namespace UIPrintilanApp
                 }
             }
         }
+
+        //yang buat RORE masih error
+        //private void btnInsert_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        if (conn == null)
+        //        {
+        //            conn = new NpgsqlConnection(connstring);
+        //        }
+
+        //        if (conn.State != ConnectionState.Open)
+        //        {
+        //            conn.Open();
+        //        }
+
+        //        sql = @"INSERT INTO product (storeid, productname, price, category, material, dimensions, availability, description, product_location)
+        //        VALUES (@storeid, @productname, @price, @category, @material, @dimensions, @availability, @description, @product_location)";
+        //        cmd = new NpgsqlCommand(sql, conn);
+
+        //        cmd.Parameters.AddWithValue("@storeid", UserSession.StoreId);  // Ensure it is inserted with the authorized storeid
+        //        cmd.Parameters.AddWithValue("@productname", tbPrName.Text);
+        //        cmd.Parameters.AddWithValue("@price", Convert.ToDecimal(tbPrPrice.Text));
+        //        cmd.Parameters.AddWithValue("@category", tbPrCategory.Text);
+        //        cmd.Parameters.AddWithValue("@material", tbPrMaterial.Text);
+        //        cmd.Parameters.AddWithValue("@dimensions", tbPrDimensions.Text);
+        //        cmd.Parameters.AddWithValue("@availability", cbPrAvailability.Checked);
+        //        cmd.Parameters.AddWithValue("@description", tbPrDescription.Text);
+        //        cmd.Parameters.AddWithValue("@product_location", tbLocation.Text);
+
+        //        int rowsAffected = cmd.ExecuteNonQuery();
+        //        if (rowsAffected > 0)
+        //        {
+        //            MessageBox.Show("Product added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //            btnLoadData.PerformClick();  // Reload data after insert
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Failed to add product.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        }
+
+        //        conn.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error: " + ex.Message, "Insert Failed!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
+
+
     }
 }

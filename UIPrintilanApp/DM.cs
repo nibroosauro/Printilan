@@ -20,8 +20,13 @@ namespace UIPrintilanApp
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Product ProductForm = new Product();
-            ProductForm.Show();
+            ListDM ListDMForm = new ListDM();
+            ListDMForm.Show();
+        }
+
+        private void DM_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

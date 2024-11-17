@@ -56,8 +56,8 @@ namespace UIPrintilanApp
         private void btnDM_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DM DMForm = new DM();
-            DMForm.Show();
+            ListDM ListDMForm = new ListDM();
+            ListDMForm.Show();
         }
 
         private void Profile_Page_Load(object sender, EventArgs e)

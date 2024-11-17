@@ -57,10 +57,9 @@
             this.btnEditProfile.FlatAppearance.BorderSize = 0;
             this.btnEditProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditProfile.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditProfile.Location = new System.Drawing.Point(160, 172);
-            this.btnEditProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditProfile.Location = new System.Drawing.Point(131, 143);
             this.btnEditProfile.Name = "btnEditProfile";
-            this.btnEditProfile.Size = new System.Drawing.Size(216, 47);
+            this.btnEditProfile.Size = new System.Drawing.Size(177, 39);
             this.btnEditProfile.TabIndex = 2;
             this.btnEditProfile.UseVisualStyleBackColor = false;
             this.btnEditProfile.Click += new System.EventHandler(this.btnEditProfile_Click);
@@ -71,10 +70,9 @@
             this.btnSetUpStore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSetUpStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetUpStore.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSetUpStore.Location = new System.Drawing.Point(750, 956);
-            this.btnSetUpStore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSetUpStore.Location = new System.Drawing.Point(614, 797);
             this.btnSetUpStore.Name = "btnSetUpStore";
-            this.btnSetUpStore.Size = new System.Drawing.Size(255, 98);
+            this.btnSetUpStore.Size = new System.Drawing.Size(209, 82);
             this.btnSetUpStore.TabIndex = 3;
             this.btnSetUpStore.UseVisualStyleBackColor = false;
             this.btnSetUpStore.Click += new System.EventHandler(this.btnSetUpStore_Click);
@@ -88,10 +86,9 @@
             this.btnQuit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuit.ForeColor = System.Drawing.Color.Transparent;
-            this.btnQuit.Location = new System.Drawing.Point(1630, 14);
-            this.btnQuit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuit.Location = new System.Drawing.Point(1334, 12);
             this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(67, 98);
+            this.btnQuit.Size = new System.Drawing.Size(55, 82);
             this.btnQuit.TabIndex = 4;
             this.btnQuit.UseVisualStyleBackColor = false;
             this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
@@ -104,10 +101,10 @@
             this.btnWishlist.FlatAppearance.BorderSize = 0;
             this.btnWishlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWishlist.ForeColor = System.Drawing.Color.Transparent;
-            this.btnWishlist.Location = new System.Drawing.Point(1391, 25);
+            this.btnWishlist.Location = new System.Drawing.Point(1138, 17);
             this.btnWishlist.Margin = new System.Windows.Forms.Padding(0);
             this.btnWishlist.Name = "btnWishlist";
-            this.btnWishlist.Size = new System.Drawing.Size(68, 66);
+            this.btnWishlist.Size = new System.Drawing.Size(56, 45);
             this.btnWishlist.TabIndex = 5;
             this.btnWishlist.UseVisualStyleBackColor = false;
             this.btnWishlist.Click += new System.EventHandler(this.btnWishlist_Click);
@@ -119,71 +116,64 @@
             this.btnDM.FlatAppearance.BorderSize = 0;
             this.btnDM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDM.ForeColor = System.Drawing.Color.Transparent;
-            this.btnDM.Location = new System.Drawing.Point(1475, 31);
+            this.btnDM.Location = new System.Drawing.Point(1207, 26);
             this.btnDM.Margin = new System.Windows.Forms.Padding(0);
             this.btnDM.Name = "btnDM";
-            this.btnDM.Size = new System.Drawing.Size(67, 54);
+            this.btnDM.Size = new System.Drawing.Size(55, 45);
             this.btnDM.TabIndex = 6;
             this.btnDM.UseVisualStyleBackColor = false;
             this.btnDM.Click += new System.EventHandler(this.btnDM_Click);
             // 
             // tbPrName
             // 
-            this.tbPrName.Location = new System.Drawing.Point(543, 396);
-            this.tbPrName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPrName.Location = new System.Drawing.Point(444, 330);
             this.tbPrName.Name = "tbPrName";
-            this.tbPrName.Size = new System.Drawing.Size(329, 29);
+            this.tbPrName.Size = new System.Drawing.Size(270, 26);
             this.tbPrName.TabIndex = 7;
             // 
             // tbPrPrice
             // 
-            this.tbPrPrice.Location = new System.Drawing.Point(543, 487);
-            this.tbPrPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPrPrice.Location = new System.Drawing.Point(444, 406);
             this.tbPrPrice.Name = "tbPrPrice";
-            this.tbPrPrice.Size = new System.Drawing.Size(329, 29);
+            this.tbPrPrice.Size = new System.Drawing.Size(270, 26);
             this.tbPrPrice.TabIndex = 8;
             // 
             // tbPrCategory
             // 
-            this.tbPrCategory.Location = new System.Drawing.Point(543, 578);
-            this.tbPrCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPrCategory.Location = new System.Drawing.Point(444, 482);
             this.tbPrCategory.Name = "tbPrCategory";
-            this.tbPrCategory.Size = new System.Drawing.Size(329, 29);
+            this.tbPrCategory.Size = new System.Drawing.Size(270, 26);
             this.tbPrCategory.TabIndex = 9;
             // 
             // tbPrDescription
             // 
-            this.tbPrDescription.Location = new System.Drawing.Point(543, 670);
-            this.tbPrDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPrDescription.Location = new System.Drawing.Point(444, 558);
             this.tbPrDescription.Name = "tbPrDescription";
-            this.tbPrDescription.Size = new System.Drawing.Size(329, 29);
+            this.tbPrDescription.Size = new System.Drawing.Size(270, 26);
             this.tbPrDescription.TabIndex = 10;
             // 
             // tbPrDimensions
             // 
-            this.tbPrDimensions.Location = new System.Drawing.Point(1324, 396);
-            this.tbPrDimensions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPrDimensions.Location = new System.Drawing.Point(1083, 330);
             this.tbPrDimensions.Name = "tbPrDimensions";
-            this.tbPrDimensions.Size = new System.Drawing.Size(329, 29);
+            this.tbPrDimensions.Size = new System.Drawing.Size(270, 26);
             this.tbPrDimensions.TabIndex = 11;
             // 
             // tbPrMaterial
             // 
-            this.tbPrMaterial.Location = new System.Drawing.Point(1324, 487);
-            this.tbPrMaterial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPrMaterial.Location = new System.Drawing.Point(1083, 406);
             this.tbPrMaterial.Name = "tbPrMaterial";
-            this.tbPrMaterial.Size = new System.Drawing.Size(329, 29);
+            this.tbPrMaterial.Size = new System.Drawing.Size(270, 26);
             this.tbPrMaterial.TabIndex = 12;
             // 
             // dgvData
             // 
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(104, 860);
-            this.dgvData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvData.Location = new System.Drawing.Point(85, 717);
             this.dgvData.Name = "dgvData";
             this.dgvData.RowHeadersWidth = 62;
             this.dgvData.RowTemplate.Height = 28;
-            this.dgvData.Size = new System.Drawing.Size(1550, 300);
+            this.dgvData.Size = new System.Drawing.Size(1268, 250);
             this.dgvData.TabIndex = 14;
             this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             // 
@@ -193,10 +183,9 @@
             this.btnLoadData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLoadData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoadData.ForeColor = System.Drawing.Color.Transparent;
-            this.btnLoadData.Location = new System.Drawing.Point(1417, 1180);
-            this.btnLoadData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLoadData.Location = new System.Drawing.Point(1159, 983);
             this.btnLoadData.Name = "btnLoadData";
-            this.btnLoadData.Size = new System.Drawing.Size(253, 96);
+            this.btnLoadData.Size = new System.Drawing.Size(207, 80);
             this.btnLoadData.TabIndex = 15;
             this.btnLoadData.UseVisualStyleBackColor = false;
             this.btnLoadData.Click += new System.EventHandler(this.btnLoadData_Click);
@@ -207,10 +196,9 @@
             this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.Location = new System.Drawing.Point(753, 739);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Location = new System.Drawing.Point(616, 616);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(253, 96);
+            this.btnUpdate.Size = new System.Drawing.Size(207, 80);
             this.btnUpdate.TabIndex = 16;
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -221,10 +209,9 @@
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.ForeColor = System.Drawing.Color.Transparent;
-            this.btnDelete.Location = new System.Drawing.Point(1194, 739);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Location = new System.Drawing.Point(977, 616);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(253, 96);
+            this.btnDelete.Size = new System.Drawing.Size(207, 80);
             this.btnDelete.TabIndex = 17;
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -235,10 +222,9 @@
             this.btnInsert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInsert.Location = new System.Drawing.Point(263, 739);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInsert.Location = new System.Drawing.Point(215, 616);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(253, 96);
+            this.btnInsert.Size = new System.Drawing.Size(207, 80);
             this.btnInsert.TabIndex = 18;
             this.btnInsert.UseVisualStyleBackColor = false;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
@@ -246,8 +232,7 @@
             // cbPrAvailability
             // 
             this.cbPrAvailability.AutoSize = true;
-            this.cbPrAvailability.Location = new System.Drawing.Point(1336, 581);
-            this.cbPrAvailability.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbPrAvailability.Location = new System.Drawing.Point(1093, 484);
             this.cbPrAvailability.Name = "cbPrAvailability";
             this.cbPrAvailability.Size = new System.Drawing.Size(22, 21);
             this.cbPrAvailability.TabIndex = 19;
@@ -255,20 +240,19 @@
             // 
             // tbLocation
             // 
-            this.tbLocation.Location = new System.Drawing.Point(1163, 670);
-            this.tbLocation.Margin = new System.Windows.Forms.Padding(4);
+            this.tbLocation.Location = new System.Drawing.Point(952, 558);
             this.tbLocation.Name = "tbLocation";
-            this.tbLocation.Size = new System.Drawing.Size(329, 29);
+            this.tbLocation.Size = new System.Drawing.Size(270, 26);
             this.tbLocation.TabIndex = 20;
             // 
             // SetUpStore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1760, 1327);
+            this.ClientSize = new System.Drawing.Size(1440, 922);
             this.Controls.Add(this.tbLocation);
             this.Controls.Add(this.cbPrAvailability);
             this.Controls.Add(this.btnInsert);
@@ -289,9 +273,8 @@
             this.Controls.Add(this.btnEditProfile);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximumSize = new System.Drawing.Size(1760, 1327);
-            this.MinimumSize = new System.Drawing.Size(1760, 1294);
+            this.MaximumSize = new System.Drawing.Size(1440, 1106);
+            this.MinimumSize = new System.Drawing.Size(1440, 898);
             this.Name = "SetUpStore";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SetUpProfile";

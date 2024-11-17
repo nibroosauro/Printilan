@@ -119,6 +119,12 @@
     <Compile Include="LandingPage.Designer.cs">
       <DependentUpon>LandingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListDM.Designer.cs">
+      <DependentUpon>ListDM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LandingPage.resx">
       <DependentUpon>LandingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListDM.resx">
+      <DependentUpon>ListDM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>

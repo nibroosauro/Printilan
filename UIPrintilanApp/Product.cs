@@ -32,8 +32,8 @@ namespace UIPrintilanApp
         private void btnDM_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DM DMForm = new DM();
-            DMForm.Show();
+            ListDM ListDMForm = new ListDM();
+            ListDMForm.Show();
         }
 
         private void btnWish_Click(object sender, EventArgs e)

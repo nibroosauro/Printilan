@@ -59,13 +59,33 @@ namespace UIPrintilanApp
         private void btnDM_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DM DMForm = new DM(); 
-            DMForm.Show();
+            ListDM ListDMForm = new ListDM(); 
+            ListDMForm.Show();
         }
 
         private void btnWishlist_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Ini nanti page Wishlist", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void pbHomepage_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProductName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

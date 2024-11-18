@@ -16,6 +16,7 @@ namespace UIPrintilanApp
         static void Main()
         {
             //sorry lin, but your relative path is not working for me 😭😭😭
+            //update
             try
             {
                 string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;

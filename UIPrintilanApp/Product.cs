@@ -17,36 +17,9 @@ namespace UIPrintilanApp
             InitializeComponent();
         }
 
-        private void btnOffer_Click(object sender, EventArgs e)
-        {
-            this.Hide(); // close the Product window
-            DM DMForm = new DM(); // construct DM Form
-            DMForm.Show(); // show DM Form
-        }
-
-        private void btnWishlist_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Under Construction", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void btnDM_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ListDM ListDMForm = new ListDM();
-            ListDMForm.Show();
-        }
-
         private void btnWish_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Under Construction", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void btnProfile_Click(object sender, EventArgs e)
-        {
-            //MessageBox.Show("Infokan profile bang @Rore", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Hide();
-            Profile_Page profileForm = new Profile_Page();
-            profileForm.Show();
         }
 
         private void btnQuit_Click(object sender, EventArgs e)
@@ -62,6 +35,39 @@ namespace UIPrintilanApp
             {
                 this.Close();
             }
+        }
+
+        private void btnOffer_Click_1(object sender, EventArgs e)
+        {
+            this.Hide(); // close the Product window
+            DM DMForm = new DM(); // construct DM Form
+            DMForm.Show(); // show DM Form
+        }
+
+        private void btnWishlist_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Under Construction", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+
+        private void btnProfile_Click_1(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Infokan profile bang @Rore", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+            Profile_Page profileForm = new Profile_Page();
+            profileForm.Show();
+        }
+
+        private void btnDM_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ListDM ListDMForm = new ListDM();
+            ListDMForm.Show();
+        }
+
+        private void btnWhsh_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Under Construction", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

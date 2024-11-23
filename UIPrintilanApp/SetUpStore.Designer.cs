@@ -31,9 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SetUpStore));
             this.btnEditProfile = new System.Windows.Forms.Button();
             this.btnSetUpStore = new System.Windows.Forms.Button();
-            this.btnQuit = new System.Windows.Forms.Button();
-            this.btnWishlist = new System.Windows.Forms.Button();
-            this.btnDM = new System.Windows.Forms.Button();
             this.tbPrName = new System.Windows.Forms.TextBox();
             this.tbPrPrice = new System.Windows.Forms.TextBox();
             this.tbPrCategory = new System.Windows.Forms.TextBox();
@@ -47,6 +44,9 @@
             this.btnInsert = new System.Windows.Forms.Button();
             this.cbPrAvailability = new System.Windows.Forms.CheckBox();
             this.tbLocation = new System.Windows.Forms.TextBox();
+            this.btnWhsh = new System.Windows.Forms.Button();
+            this.btnDM = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +57,7 @@
             this.btnEditProfile.FlatAppearance.BorderSize = 0;
             this.btnEditProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditProfile.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditProfile.Location = new System.Drawing.Point(131, 143);
+            this.btnEditProfile.Location = new System.Drawing.Point(132, 116);
             this.btnEditProfile.Name = "btnEditProfile";
             this.btnEditProfile.Size = new System.Drawing.Size(177, 39);
             this.btnEditProfile.TabIndex = 2;
@@ -76,53 +76,6 @@
             this.btnSetUpStore.TabIndex = 3;
             this.btnSetUpStore.UseVisualStyleBackColor = false;
             this.btnSetUpStore.Click += new System.EventHandler(this.btnSetUpStore_Click);
-            // 
-            // btnQuit
-            // 
-            this.btnQuit.BackColor = System.Drawing.Color.Transparent;
-            this.btnQuit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnQuit.FlatAppearance.BorderSize = 0;
-            this.btnQuit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnQuit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuit.ForeColor = System.Drawing.Color.Transparent;
-            this.btnQuit.Location = new System.Drawing.Point(1334, 12);
-            this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(55, 82);
-            this.btnQuit.TabIndex = 4;
-            this.btnQuit.UseVisualStyleBackColor = false;
-            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
-            // 
-            // btnWishlist
-            // 
-            this.btnWishlist.BackColor = System.Drawing.Color.Transparent;
-            this.btnWishlist.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWishlist.BackgroundImage")));
-            this.btnWishlist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnWishlist.FlatAppearance.BorderSize = 0;
-            this.btnWishlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWishlist.ForeColor = System.Drawing.Color.Transparent;
-            this.btnWishlist.Location = new System.Drawing.Point(1138, 17);
-            this.btnWishlist.Margin = new System.Windows.Forms.Padding(0);
-            this.btnWishlist.Name = "btnWishlist";
-            this.btnWishlist.Size = new System.Drawing.Size(56, 45);
-            this.btnWishlist.TabIndex = 5;
-            this.btnWishlist.UseVisualStyleBackColor = false;
-            this.btnWishlist.Click += new System.EventHandler(this.btnWishlist_Click);
-            // 
-            // btnDM
-            // 
-            this.btnDM.BackColor = System.Drawing.Color.Transparent;
-            this.btnDM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDM.FlatAppearance.BorderSize = 0;
-            this.btnDM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDM.ForeColor = System.Drawing.Color.Transparent;
-            this.btnDM.Location = new System.Drawing.Point(1207, 26);
-            this.btnDM.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDM.Name = "btnDM";
-            this.btnDM.Size = new System.Drawing.Size(55, 45);
-            this.btnDM.TabIndex = 6;
-            this.btnDM.UseVisualStyleBackColor = false;
-            this.btnDM.Click += new System.EventHandler(this.btnDM_Click);
             // 
             // tbPrName
             // 
@@ -245,6 +198,57 @@
             this.tbLocation.Size = new System.Drawing.Size(270, 26);
             this.tbLocation.TabIndex = 20;
             // 
+            // btnWhsh
+            // 
+            this.btnWhsh.BackColor = System.Drawing.Color.Transparent;
+            this.btnWhsh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnWhsh.FlatAppearance.BorderSize = 0;
+            this.btnWhsh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnWhsh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnWhsh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWhsh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(255)))), ((int)(((byte)(195)))));
+            this.btnWhsh.Location = new System.Drawing.Point(1132, 9);
+            this.btnWhsh.Margin = new System.Windows.Forms.Padding(0);
+            this.btnWhsh.Name = "btnWhsh";
+            this.btnWhsh.Size = new System.Drawing.Size(66, 52);
+            this.btnWhsh.TabIndex = 21;
+            this.btnWhsh.UseVisualStyleBackColor = false;
+            this.btnWhsh.Click += new System.EventHandler(this.btnWhsh_Click);
+            // 
+            // btnDM
+            // 
+            this.btnDM.BackColor = System.Drawing.Color.Transparent;
+            this.btnDM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDM.FlatAppearance.BorderSize = 0;
+            this.btnDM.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnDM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnDM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(255)))), ((int)(((byte)(195)))));
+            this.btnDM.Location = new System.Drawing.Point(1198, 12);
+            this.btnDM.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDM.Name = "btnDM";
+            this.btnDM.Size = new System.Drawing.Size(66, 52);
+            this.btnDM.TabIndex = 22;
+            this.btnDM.UseVisualStyleBackColor = false;
+            this.btnDM.Click += new System.EventHandler(this.btnDM_Click_1);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(255)))), ((int)(((byte)(195)))));
+            this.btnExit.Location = new System.Drawing.Point(1338, 12);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(66, 52);
+            this.btnExit.TabIndex = 23;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // SetUpStore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -253,6 +257,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1440, 922);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnDM);
+            this.Controls.Add(this.btnWhsh);
             this.Controls.Add(this.tbLocation);
             this.Controls.Add(this.cbPrAvailability);
             this.Controls.Add(this.btnInsert);
@@ -266,9 +273,6 @@
             this.Controls.Add(this.tbPrCategory);
             this.Controls.Add(this.tbPrPrice);
             this.Controls.Add(this.tbPrName);
-            this.Controls.Add(this.btnDM);
-            this.Controls.Add(this.btnWishlist);
-            this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnSetUpStore);
             this.Controls.Add(this.btnEditProfile);
             this.DoubleBuffered = true;
@@ -290,9 +294,6 @@
 
         private System.Windows.Forms.Button btnEditProfile;
         private System.Windows.Forms.Button btnSetUpStore;
-        private System.Windows.Forms.Button btnQuit;
-        private System.Windows.Forms.Button btnWishlist;
-        private System.Windows.Forms.Button btnDM;
         private System.Windows.Forms.TextBox tbPrName;
         private System.Windows.Forms.TextBox tbPrPrice;
         private System.Windows.Forms.TextBox tbPrCategory;
@@ -306,5 +307,8 @@
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.CheckBox cbPrAvailability;
         private System.Windows.Forms.TextBox tbLocation;
+        private System.Windows.Forms.Button btnWhsh;
+        private System.Windows.Forms.Button btnDM;
+        private System.Windows.Forms.Button btnExit;
     }
 }

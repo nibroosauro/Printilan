@@ -64,33 +64,6 @@ namespace UIPrintilanApp
             //logic to set up store
         }
 
-        private void btnQuit_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show(
-                "Are you sure you want to quit Printilan App?",
-                "Confirm Exit",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
-
-            if (result == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
-
-        private void btnWishlist_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Ini nanti page Wishlist", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void btnDM_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ListDM ListDMForm = new ListDM();
-            ListDMForm.Show();
-        }
-
         //private void SetUpStore_Load(object sender, EventArgs e)
         //{
         //    try
@@ -529,6 +502,33 @@ namespace UIPrintilanApp
                 {
                     conn.Close();
                 }
+            }
+        }
+
+        private void btnWhsh_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ini nanti page Wishlist", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnDM_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ListDM ListDMForm = new ListDM();
+            ListDMForm.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to quit Printilan App?",
+                "Confirm Exit",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
             }
         }
 

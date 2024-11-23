@@ -63,21 +63,6 @@ namespace UIPrintilanApp
 
         }
 
-        private void btnOut_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show(
-                "Are you sure you want to quit Printilan App?",
-                "Confirm Exit",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
-
-            if (result == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
-
         //private void btnSetUpProfile_Click(object sender, EventArgs e)
         //{
         //    this.Hide();
@@ -127,19 +112,6 @@ namespace UIPrintilanApp
             }
         }
 
-
-        private void btnWishlist_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Ini nanti page Wishlist", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void btnDM_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ListDM ListDMForm = new ListDM();
-            ListDMForm.Show();
-        }
-
         private void Profile_Page_Load(object sender, EventArgs e)
         {
             LoadUserProfile();
@@ -179,5 +151,31 @@ namespace UIPrintilanApp
             }
         }
 
+        private void btnWhsh_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ini nanti page Wishlist", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnDM_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ListDM ListDMForm = new ListDM();
+            ListDMForm.Show();
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to quit Printilan App?",
+                "Confirm Exit",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

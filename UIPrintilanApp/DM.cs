@@ -17,16 +17,16 @@ namespace UIPrintilanApp
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void DM_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             ListDM ListDMForm = new ListDM();
             ListDMForm.Show();
-        }
-
-        private void DM_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

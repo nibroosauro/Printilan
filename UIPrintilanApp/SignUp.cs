@@ -20,10 +20,47 @@ namespace UIPrintilanApp
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to quit Printilan App?",
+                "Confirm Exit",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
-        private void btnSignUp_Click(object sender, EventArgs e)
+        private void tbEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnToLogIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LogIn loginForm = new LogIn();
+            loginForm.Show();
+        }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignUp_Click_1(object sender, EventArgs e)
         {
             // input dari TextBox
             string username = tbUserName.Text;
@@ -77,33 +114,6 @@ namespace UIPrintilanApp
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void tbEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbUserName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnToLogIn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            LogIn loginForm = new LogIn();
-            loginForm.Show();
-        }
-
-        private void SignUp_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

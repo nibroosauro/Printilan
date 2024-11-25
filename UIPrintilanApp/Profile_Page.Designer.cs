@@ -88,6 +88,7 @@
             this.txtboxNewPassword.Name = "txtboxNewPassword";
             this.txtboxNewPassword.Size = new System.Drawing.Size(354, 26);
             this.txtboxNewPassword.TabIndex = 4;
+            this.txtboxNewPassword.UseSystemPasswordChar = true;
             // 
             // txtboxNewEmail
             // 
@@ -170,7 +171,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1440, 1024);
-            this.MinimumSize = new System.Drawing.Size(1440, 1024);
+            this.MinimumSize = new System.Drawing.Size(1440, 1006);
             this.Name = "Profile_Page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profile_Page";

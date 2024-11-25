@@ -86,8 +86,9 @@ namespace UIPrintilanApp
                 using (var connection = new NpgsqlConnection(AppSettings.ConnectionString))
                 {
                     connection.Open();
-                    string query = "INSERT INTO tb_user (userid, username, email, full_name, password) " +
-                                   "VALUES (@userId, @username, @email, @fullName, @password)";
+                    // string query = "INSERT INTO tb_user (userid, username, email, full_name, password) " +
+                    //       "VALUES (@userId, @username, @email, @fullName, @password)";
+                    string query = "SELECT * FROM insert_user(@username, @email, @fullName, @password);";
 
                     using (var command = new NpgsqlCommand(query, connection))
                     {

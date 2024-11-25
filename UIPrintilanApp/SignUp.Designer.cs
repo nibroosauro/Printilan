@@ -84,6 +84,7 @@
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(308, 26);
             this.tbPassword.TabIndex = 13;
+            this.tbPassword.UseSystemPasswordChar = true;
             this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // btnToLogIn
@@ -145,7 +146,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1440, 1024);
-            this.MinimumSize = new System.Drawing.Size(1440, 1024);
+            this.MinimumSize = new System.Drawing.Size(1440, 1006);
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";

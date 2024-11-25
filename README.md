@@ -33,16 +33,16 @@ There are 2 main ways you can get Printilan App on your local machine. Since thi
 
 #### Release (Recommended Way)
 
-1. Download the .zip file and extract.
-2. Copy your environment variable to the folder. If you wish to use our database please contact one of the contributor.
+1. Download the .zip file from our Release tab and extract.
+2. Copy your environment variable to the folder. If you wish to use our database please contact one of the contributors.
 3. Run the .exe inside the folder
 
-### Compiling From Source (Require Visual Studio)
+#### Compiling From Source (Require Visual Studio)
 
 1. Clone the repostiory, either open the UIPrintilanApp folder or the solution file using Visual Studio.
 2. Click the build button.
 3. You will find a new folder `bin/release' inside the UIPrintilanApp.
-4. Copy your environment variable to the folder. If you wish to use our database please contact one of the contributor.
+4. Copy your environment variable to the folder. If you wish to use our database please contact one of the contributors.
 5. Run the .exe inside the folder.
 
 ### 🚀 Getting Started

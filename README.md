@@ -29,26 +29,26 @@ This class diagram represents the architecture of Printilan, a native Windows ap
 
 ### 🛠️ Installation Guide
 
-Follow the steps below to set up and run the Printilan App on your local machine:
+There are 2 main ways you can get Printilan App on your local machine. Since this app is intended to be used and modified, we encourage the users of the application to set their environment first before running the application. Most importantly, build your database first. We tested this application using PostgreSQL. 
 
-```bash
-# Clone the repository
-git clone https://github.com/nibroosauro/Printilan.git
+#### Release (Recommended Way)
 
-# Navigate to the project directory
-cd printilan-app
+1. Download the .zip file and extract.
+2. Copy your environment variable to the folder. If you wish to use our database please contact one of the contributor.
+3. Run the .exe inside the folder
 
-# Install dependencies
-404
+### Compiling From Source (Require Visual Studio)
 
-# Run the application
-404
+1. Clone the repostiory, either open the UIPrintilanApp folder or the solution file using Visual Studio.
+2. Click the build button.
+3. You will find a new folder `bin/release' inside the UIPrintilanApp.
+4. Copy your environment variable to the folder. If you wish to use our database please contact one of the contributor.
+5. Run the .exe inside the folder.
 
-```
 ### 🚀 Getting Started
-Explore the Codebase: Familiarize yourself with the structure and components of the project.
-Contribute: Feel free to fork the repository and submit pull requests to improve the project.
-Report Issues: If you encounter any bugs or have suggestions, open an issue on the repository.
+Explore the Codebase: Familiarize yourself with the structure and components of the project. \
+Contribute: Feel free to fork the repository and submit pull requests to improve the project. \
+Report Issues: If you encounter any bugs or have suggestions, open an issue on the repository. \
 🌟 Project Goals
 The Printilan app addresses the issue of waste accumulation in dormitories by creating a platform that facilitates the sale and purchase of second-hand goods. This not only helps reduce the amount of waste generated but also provides an economically viable option for students. The app's design is influenced by popular e-commerce platforms like Shopee and Tokopedia but with a specific focus on sustainability and the student market.
 

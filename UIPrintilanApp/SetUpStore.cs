@@ -532,6 +532,23 @@ namespace UIPrintilanApp
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+            "Are you sure you want to quit Printilan App?",
+            "Confirm Exit",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                LogIn LogInForm = new LogIn();
+                LogInForm.Show();
+            }
+        }
+
         //yang buat RORE masih error
         //private void btnInsert_Click(object sender, EventArgs e)
         //{

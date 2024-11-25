@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Database",
+    "\\Etcetera",
     "\\UIPrintilanApp"
   ],
-  "SelectedNode": "\\UIPrintilanApp\\Program.cs",
+  "SelectedNode": "\\UIPrintilanApp\\User.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -47,6 +47,7 @@
             this.btnWhsh = new System.Windows.Forms.Button();
             this.btnDM = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -249,6 +250,19 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.Purple;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(1093, 106);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(246, 49);
+            this.btnLogout.TabIndex = 24;
+            this.btnLogout.Text = "LOG OUT";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.button1_Click);
+            // 
             // SetUpStore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -257,6 +271,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1440, 922);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDM);
             this.Controls.Add(this.btnWhsh);
@@ -310,5 +325,6 @@
         private System.Windows.Forms.Button btnWhsh;
         private System.Windows.Forms.Button btnDM;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
